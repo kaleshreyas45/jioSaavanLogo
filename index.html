@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a73d299641.js" crossorigin="anonymous"></script>
+    <title>Jio Saavan Logo</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 200px;
+        }
+        .saavan{
+            width:300px;
+            height:300px;
+            position: relative;
+            background-color: #1c2627;
+            border-radius: 55px;
+            transform: scale(15);
+            visibility: hidden;
+            animation-name: original-position;
+            animation-delay:0.5s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transition: all 0.5s;
+           
+        }
+        @keyframes original-position{
+            0%{
+                visibility: hidden;
+                transform: scale(15);
+            }
+            100%{
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+        .saavanspan i{
+            position: absolute;
+            bottom: 43px;
+            right: 43px;
+            color: white;
+            z-index: 5;
+            font-size: 36px;
+        }
+        .saavanspan::before{
+            content: "";
+            position: absolute;
+            bottom:13px;
+            right:12px;
+            width:83px;
+            height:83px;
+            background-color: #2bc5b4;
+            border-radius: 50%;
+            z-index: 4;
+            border: 6px solid #1c2627;
+        }
+        .inner{
+            position: absolute;
+            top:20px;
+            left:20px;
+            border: 20px solid white;
+            border-radius:55px;
+            width:220px;
+            height:220px; 
+            overflow: hidden;
+            visibility: hidden;
+            transform: scale(-15);
+            animation-name: first;
+            animation-delay: 1.5s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes first{
+            0%{
+                visibility: hidden;
+                transform: scale(-15);
+            }
+            100%{
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+
+        .inner1{
+            position: absolute;
+            top:20px;
+            left:20px;
+            background-color: white;
+            width:180px;
+            height:180px;
+            border-radius: 55px;
+            border:none;
+            overflow: hidden; 
+            visibility: hidden;
+            transform: scale(-15);
+            animation-name: second;
+            animation-delay: 2s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes second{
+            0%{
+                visibility: hidden;
+                transform: scale(-15);
+            }
+            100%{
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+         .inner1::before{
+            content: "";
+            position: absolute;
+            width:202px;
+            height:245px;
+            border-radius: 50%;
+            top:65px;
+            left:-123px;
+            background-color: #1c2627;
+            z-index: 2;
+            visibility: hidden;
+            transform: translate(-100%);
+            animation-name: inner1-bef;
+            animation-delay: 3s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes inner1-bef{
+            0%{
+                visibility: hidden;
+                transform: translate(-100%);
+            }
+            100%{
+                visibility: visible;
+                transform: translate(0%);
+            }
+        }
+        .inner1::after{
+            content: "";
+            position: absolute;
+            width:185px;
+            height:224px;
+            border-radius: 50%;
+            top:84px;
+            right:-116px;
+            background-color: #1c2627;
+            z-index: 2;
+            visibility: hidden;
+            transform: translateX(100%);
+            animation-name: inner1-aft;
+            animation-delay: 3s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        } 
+        @keyframes inner1-aft{
+            0%{
+                visibility: hidden;
+                transform: translateX(100%);
+            }
+            100%{
+                visibility: visible;
+                transform: translateX(0%);
+            }
+        }
+        .inner1 span::before{
+            content: "";
+            position: absolute;
+            bottom:-14px;
+            left:3px;
+            width:65px;
+            height:50px;
+            background-color: rgb(255, 255, 255);
+            border-top-right-radius: 100%;
+            z-index: 3;
+            visibility: hidden;
+            transform: translateY(100%);
+            animation-name: span;
+            animation-delay: 3.5s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .inner1 span::after{
+            content: "";
+            position: absolute;
+            bottom:-14px;
+            right:3px;
+            width:58px;
+            height:50px;
+            background-color: rgb(255, 255, 255);
+            border-top-left-radius: 100%;
+            z-index: 3;
+            visibility: hidden;
+            transform: translateY(100%);
+            animation-name: span;
+            animation-delay: 3.5s;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes span{
+            0%{
+                visibility: hidden;
+                transform: translateY(100%);
+            }
+            100%{
+                visibility: visible;
+                transform: translateY(0%);
+            }
+        }
+         .inner2{
+            position: absolute;
+            top:-8px;
+            left:13%;
+            width:80px;
+            height:180px;
+            background-color: #1c2627;
+            border-top-right-radius: 0%;
+            border-bottom-right-radius: 100%;    
+            transform: rotate(-18deg);
+            transform-origin:top ; 
+            visibility: hidden;  
+            transform: rotate(-90deg) translateX(-100%) ;     
+            animation-name:inner2-sec;
+            animation-delay: 3s;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;   
+        }
+        @keyframes inner2-sec{
+            0%{
+                visibility: hidden;
+                transform: rotate(-90deg) translateX(-100%) ;
+            }
+            50%{
+                visibility: hidden;
+                transform: rotate(-90deg) translateX(0%) ;
+            }
+            100%{
+                visibility: visible;
+                transform:  rotate(-18deg) translateX(0%);
+            }
+        }
+        .inner2::before{
+            content: "";
+            position: absolute;
+            left:-243%;
+            top:-42%;
+            width:168px;
+            height:316px;
+            border-bottom-right-radius: 74%;
+            background-color: white;
+            transform: translateY(-100%) rotate(0deg);
+            transform-origin: top;
+            visibility: hidden;
+            animation-name: inner2-bef;
+            animation-duration: 1s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes inner2-bef{
+            0%{
+                visibility: hidden;
+                transform:translateY(-100%) rotate(0deg);
+            }
+            100%{
+                visibility: visible;
+                transform: translateY(0%) rotate(-19deg);
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="saavan">
+            <span class="saavanspan"><i class="fas fa-music"></i></span>
+            <div class="inner">
+                <span></span>
+                <div class="inner1">
+                    <span></span>
+                    <div class="inner2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
