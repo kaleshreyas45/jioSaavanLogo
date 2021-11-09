@@ -23,8 +23,7 @@
             position: relative;
             background-color: #1c2627;
             border-radius: 55px;
-            transform: scale(15);
-            visibility: hidden;
+            opacity:0;
             animation-name: original-position;
             animation-delay:0.5s;
             animation-duration: 1s;
@@ -34,12 +33,10 @@
         }
         @keyframes original-position{
             0%{
-                visibility: hidden;
-                transform: scale(15);
+                opacity:0;
             }
             100%{
-                visibility: visible;
-                transform: scale(1);
+                opacity:1;
             }
         }
         .saavanspan i{
